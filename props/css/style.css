@@ -336,7 +336,7 @@ html {
     }
 
     .head-title {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 18rem;
     }
 
@@ -345,7 +345,7 @@ html {
         font-size: 20px;
     }
     .section-title {
-        margin-top: -39rem;
+        margin-top: -40rem;
     }
 
     .column-right {
@@ -354,7 +354,7 @@ html {
 
     .social-media {
         background: transparent;
-        margin-top: -20px;
+        margin-top: -30px;
     }
 
     .icon-list li span {

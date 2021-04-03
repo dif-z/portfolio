@@ -250,13 +250,13 @@ html {
         grid-template-columns: auto;
         background: var(--brightred);
         margin: 0;
-        width: 530px;
+        width: 100%;
         position: absolute;
         top: 80px;
         left: -100%;
         opacity: 0;
         transition: all 0.5s ease;
-        margin-left: -35px;
+        margin-left: -20px;
     }
 
     #navbar-logo {
@@ -278,8 +278,7 @@ html {
     }
 
     .nav-links:hover {
-        background-color: var(--brightred);
-        color: var(--white);
+        color: var(--brightred);
         transition: all 0.4s ease-out;
     }
 
@@ -299,8 +298,7 @@ html {
         border: none;
         padding: 0;
         border-radius: 0;
-        background-color: var(--brightred);
-        color: var(--white);
+        color: var(--brightred);
         transition: all 0.4s ease-out;
     }
     #mobile-menu {
@@ -347,7 +345,7 @@ html {
         font-size: 20px;
     }
     .section-title {
-        margin-top: -37rem;
+        margin-top: -39rem;
     }
 
     .column-right {
@@ -365,6 +363,7 @@ html {
 
     .icon-list li {
         background: transparent;
+        margin: 0 20px;
     }
 
 

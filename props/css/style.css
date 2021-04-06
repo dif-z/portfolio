@@ -2,13 +2,12 @@
     --darkgray: #212329;
     --brightred: #fd2921;
     --white: #fff;
-    --lightred: #f9433dcc;
 }
 
 html {
     scroll-behavior: smooth;
 }
-    
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -91,7 +90,7 @@ html {
 /* === HEADER === */
 .head-title {
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #f5f5f5;
     text-align: center;
     line-height: 30rem;
     font-size: 70px;
@@ -119,11 +118,11 @@ html {
 }
 
 .column-right {
-    background: #272b3b;
+    background: #eeecec;
 }
 
 .section-title, .paragraph {
-    color: rgb(255, 255, 255);
+    color: #212329;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -146,9 +145,9 @@ html {
     justify-content: center;
     align-items: center;
     height: 200px;
-    background: #272b3b;
+    background: #eeecec;;
     margin-top: 50px;
-  }
+}
   
 .icon-list {
     position: relative;
@@ -165,7 +164,7 @@ html {
     height: 60px;
     margin: 0 30px;
     transform: rotate(-30deg) skew(25deg);
-    background: #272b3b;
+    background: #eeecec;;
 }
   
 .icon-list li span {
@@ -175,7 +174,7 @@ html {
     width: 100%;
     height: 100%;
     transition: 0.5s;
-    background: #272b3b;
+    background: #eeecec;;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -224,20 +223,143 @@ html {
     background: #9147fe;
 }
 
-
-/* === DESKTOP VER === */
-@media screen and (min-width: 992px) {
-    .header-page::before {
-        content: '';
-        position: absolute;
-        bottom: 15px;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        background: linear-gradient(0deg, #272b3b 3%, transparent);
-        transition: 0.2s;    
-    }
+/* === SECTION1 CSS === */
+main {
+    background-color: #eeecec;
+    margin-top: -3px;
 }
+
+.section-1 {
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    text-align: left;
+    background-color: var(--white);
+    border-radius: 3px;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    color: #212329;
+    width: 50%;
+    margin-top: 4rem;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+    padding: 0.4em;
+    font-size: 7vmin;
+}
+
+.section-1 .row .col-md-6 .panel p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* === SECTION 2 CSS === */
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url(../images/bg6.jpg);
+    background-position: -20rem -19rem;
+    background-size: 100%;
+    position: relative;
+}
+
+.cover .content {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vmin;
+    color: #e5e5e5
+}
+
+.numbers {
+    margin-top: -13vmin;
+}
+
+.numbers .rectangle {
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 2vmin;
+    box-shadow: 1px 2px 30px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.numbers .rectangle > h1 {
+    margin-top: 9vmin;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.numbers .rectangle > h1:hover {
+    color: var(--brightred);
+    transition: all 0.2s ease-out;
+}
+.numbers .rectangle:hover {
+    background-color: var(--darkgray);
+    color: #f5f5f5;
+    transition: all 0.3s ease-out;
+}
+
+/* === END OF SECTION === */
+.end-section {
+    width: 100%;
+    height: 25rem;
+    background-color: var(--darkgray);
+    margin-top: -4rem;
+}
+
+.message .thanks-message > h1 {
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    padding: 11rem 22rem;
+}
+
+/* === PROFILE SECTION === */
+footer {
+    background-color: var(--darkgray);
+    color: var(--white);
+    width: 100%;
+    height: 300px;
+}
+
+.profile > img {
+    margin-top: -60px;
+}
+
+.profile > h1 {
+    padding-top: 30px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* === TAB VERSION === */
 @media screen and (max-width: 758px) {
     /* === NAVBAR === */
@@ -285,6 +407,7 @@ html {
     .navbar {
         width: 100%;
     }
+
     .nav-links-btn {
         border: none;
         padding: 0;
@@ -336,7 +459,7 @@ html {
     }
 
     .head-title {
-        font-size: 35px;
+        font-size: 40px;
         line-height: 18rem;
     }
 
@@ -345,16 +468,20 @@ html {
         font-size: 20px;
     }
     .section-title {
-        margin-top: -40rem;
+        margin-top: -37rem;
     }
 
     .column-right {
         background-color: transparent;
     }
+    .column-right h1,
+    .column-right p {
+        color: #f5f5f5;
+    }
 
     .social-media {
         background: transparent;
-        margin-top: -30px;
+        margin-top: -20px;
     }
 
     .icon-list li span {
@@ -366,9 +493,43 @@ html {
         margin: 0 10px;
     }
 
+    /* === SECTION MOBILE CSS === */
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+        margin-top: -8rem;
+    }
 
-    
+    .section-1 .row .col-md-6 .pray img {
+        display: none;
+    }
 
+    .section-2 {
+        margin-top: -5rem;
+    }
 
+    .section-2  .cover {
+        background-position: -25vmin -10vmin;
+    }
 
+    .numbers .rectangle {
+        width: 7.5rem;
+        height: 5rem;
+    }
+
+    .numbers .rectangle h1 {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    /* === THANKS SECTION === */
+    .message .thanks-message > h1 {
+        font-size: 3rem;
+        padding: 8rem 6.5rem;
+        text-align: center;
+    }
+
+    .end-section {
+        height: 24rem;
+    }
 }
